@@ -1,3 +1,10 @@
+/**
+ * genPermsCsv
+ * 
+ * Generates a permissions.csv file based on the permSearch output.
+ * (permSearch's use of promises isn't exactly sane.)
+ */
+
 const fs = require("fs-extra");
 
 const permSearch = require("./permSearch");
@@ -17,7 +24,7 @@ async function start() {
 
     const csv = csvRows.join("\r\n");
 
-    await fs.writeFile("./out/permissions.csv", csv);
+    await fs.writeFile("../out/permissions.csv", csv);
 
     return csv;
 }

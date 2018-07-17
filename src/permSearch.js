@@ -1,9 +1,16 @@
+/**
+ * permSearch
+ * 
+ * Scans a specified Essentials source root for permissions checks.
+ * Outputs details of checks in permissions.json for other tools.
+ */
+
 const walk = require("walk");
 const fs = require("fs-extra");
 const path = require("path");
 
 const regex = /\.isAuthorized\("([a-z.-]+)"\)/g;
-const essRoot = "../../../GitKraken/EssentialsX";
+const essRoot = "../../../../GitKraken/EssentialsX";
 
 const walker = walk.walk(essRoot);
 
@@ -59,7 +66,7 @@ walker.on("end", async () => {
         }
     });
 
-    await fs.writeFile("./out/permissions.json", JSON.stringify(sortedNodes, null, 4));
+    await fs.writeFile("../out/permissions.json", JSON.stringify(sortedNodes, null, 4));
 
     module.exports.sorted = sortedNodes;
     resolve(sortedNodes);
