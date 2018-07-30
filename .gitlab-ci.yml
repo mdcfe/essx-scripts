@@ -7,14 +7,15 @@ image: node:latest
 # http://docs.gitlab.com/ce/ci/yaml/README.html#cache
 cache:
   paths:
+    - ./node_modules
   
 before_script:
-  - cd ./src
+  - mkdir out
 
 run_items:
   script:
     - yarn
-    - node ./genItemsFlat.js
+    - node ./src/genItemsFlat.js
   artifacts:
     paths:
       - out/items.json
