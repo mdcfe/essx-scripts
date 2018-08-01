@@ -47,7 +47,7 @@ function addMaterial(material) {
     const keys = processAliases(material);
     const mainKey = keys.shift();
 
-    keys[mainKey] = material; // Store the material object once
+    materials[mainKey] = material; // Store the material object once
 
     console.log(`Adding ${mainKey} with aliases: ${keys}`);
 
