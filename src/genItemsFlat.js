@@ -45,12 +45,16 @@ function asMaterial(name) {
 
 function addMaterial(material) {
     const keys = processAliases(material);
+    const mainKey = keys.shift();
 
-    console.log(keys);
+    keys[mainKey] = material; // Store the material object once
 
-    keys.forEach(key => {
-        materials[key] = material;
-    });
+    console.log(`Adding ${mainKey} with aliases: ${keys}`);
+
+    keys.filter(key => key !== mainKey) // Ensure the actual material key never gets overridden by mistake
+        .forEach(key => {
+            materials[key] = mainKey; // Store a reference to the key holding the material object
+        });
 }
 
 if (require.main === module) {
