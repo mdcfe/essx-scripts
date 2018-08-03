@@ -1,5 +1,5 @@
 module.exports = {
     prep: null,
-    test: () => true,
+    test: ({ skipSimple }) => !!skipSimple,
     get: ({ name }) => name.toLowerCase().replace(/_/g, "")
 }
