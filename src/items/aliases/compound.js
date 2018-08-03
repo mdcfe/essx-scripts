@@ -16,8 +16,18 @@ function get({ name }) {
     return _.flatten(
         this.prefixes[prefix].map(prefix =>
             this.suffixes[suffix].map(suffix =>
-                prefix + suffix)))
+                joinAlias(prefix, suffix))))
         .filter(alias => !this.protected.includes(alias));
+}
+
+function joinAlias(prefix, suffix) {
+    if (suffix[0] === "!") {
+        return suffix.slice(1) + prefix;
+    } else if (suffix.includes("$")) {
+        return suffix.replace("$", prefix);
+    } else {
+        return prefix + suffix;
+    }
 }
 
 module.exports = data => ({
