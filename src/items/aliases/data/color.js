@@ -24,7 +24,7 @@ const prefixes = {
 const suffixes = {
     // These should be preferred over shorter materials
     STAINED_GLASS_PANE: ["glasspane", "sglasspane", "stainedglasspane"],
-    GLAZED_TERRACOTTA: ["glazedtcota", "glazedterra", "glazedterracotta"],
+    GLAZED_TERRACOTTA: ["glazedtcota", "glazedterra", "glazedterracotta", "glazedterracota"],
     WALL_BANNER: ["wallbanner"],
     CONCRETE_POWDER: ["concretepowder", "concretesand"],
     // All other materials
