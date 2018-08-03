@@ -16,6 +16,8 @@ run_items:
   script:
     - yarn
     - node ./src/genItemsFlat.js
+    - node ./test/itemsCoverage.js
   artifacts:
     paths:
       - out/items.json
+      - out/items.report.json
