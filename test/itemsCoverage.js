@@ -32,7 +32,7 @@ async function start() {
             jsonTotal: jsonKeys.length,
             missing: jsonMissing.length,
             extra: jsonExtra.length,
-            coverage: Math.ceil((jsonMissing.length / csvKeys.length) * 100)
+            coverage: Math.ceil(((csvKeys.length - jsonMissing.length) / csvKeys.length) * 100)
         },
         missing: jsonMissing,
         extra: jsonExtra
