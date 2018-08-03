@@ -23,6 +23,7 @@ const suffixes = {
     STAIRS: ["woodenstairs", "woodstairs", "wstairs", "woodenstair", "woodstair", "wstair", "stair"],
     FENCE_GATE: ["fencegate", "gate"],
     FENCE: ["fence"],
+    BOAT: ["boat"],
     LOG: ["", "!log", "trunk", "log", "tree"],
     WOOD: ["wood", "logall", "trunkall", "treeall"],
     PLANK: ["woodenplank", "woodplank", "wplank", "plankwooden", "plankwood", "plankw", "plank"]
