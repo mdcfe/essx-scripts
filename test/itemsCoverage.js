@@ -26,13 +26,16 @@ async function start() {
     const jsonMissing = _.difference(csvKeys, jsonKeys);
     const jsonExtra = _.difference(jsonKeys, csvKeys);
 
+    const jsonPresentCount = csvKeys.length - jsonMissing.length;
+
     fs.writeFile(reportPath, JSON.stringify({
         stats: {
             csvTotal: csvKeys.length,
             jsonTotal: jsonKeys.length,
+            present: jsonPresentCount,
             missing: jsonMissing.length,
             extra: jsonExtra.length,
-            coverage: Math.ceil(((csvKeys.length - jsonMissing.length) / csvKeys.length) * 100)
+            coverage: ((jsonPresentCount / csvKeys.length) * 100).toFixed(2)
         },
         missing: jsonMissing,
         extra: jsonExtra
