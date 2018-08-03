@@ -6,6 +6,7 @@ const processes = [
     require("./compound")(require("./data/color")),
     require("./compound")(require("./data/wood")),
     require("./compound")(require("./data/mineable")),
+    require("./compound")(require("./data/transport")),
     // require("./compound")(require("./data/dye")),
     // require("./slabs"),
     // require("./records"),
