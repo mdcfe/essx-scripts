@@ -1,6 +1,4 @@
-const _ = require("lodash");
-
-// colors
+// Colours
 const prefixes = {
     // These should be preferred over dark versions
     LIGHT_BLUE: ["lb", "lblu", "lightblu", "lblue", "lightblue"],
@@ -45,23 +43,4 @@ const suffixes = {
 // eg. prevents WHITE_STAINED_GLASS overriding "glass"
 const protected = ["glass", "glasspane", "clay", "chest"];
 
-const test = ({ name }) =>
-    Object.keys(prefixes)
-        .reduce((acc, color) => acc || name.includes(color), false)
-    && Object.keys(suffixes)
-        .reduce((acc, type) => acc || name.includes(type), false);
-
-const get = ({ name }) => {
-    const color = Object.keys(prefixes)
-        .filter(color => name.includes(color))[0]; // always first match, eg. prefers LIGHT_BLUE over BLUE
-    const type = Object.keys(suffixes)
-        .filter(type => name.includes(type))[0];
-
-    return _.flatten(
-        prefixes[color].map(prefix =>
-            suffixes[type].map(suffix =>
-                prefix + suffix)))
-        .filter(alias => !protected.includes(alias));
-}
-
-module.exports = { test, get };
+module.exports = { prefixes, suffixes, protected };

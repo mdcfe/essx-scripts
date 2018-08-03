@@ -2,9 +2,9 @@ const _ = require("lodash");
 
 const processes = [
     require("./simple"),
-    require("./color"),
     require("./fixed"),
-    // require("./wood"),
+    require("./compound")(require("./data/color")),
+    require("./compound")(require("./data/wood")),
     // require("./ores"),
     // require("./slabs"),
     // require("./records"),
