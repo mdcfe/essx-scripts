@@ -7,7 +7,7 @@ const prefixes = {
 
 // Types of material
 const suffixes = {
-    PISTON: ["piston", "!piston", "p", "!p"],
+    PISTON: ["piston", "!piston", "p", "!p", "piston$base", "pistonbase"],
     MUSHROOM_BLOCK: ["giant$mushroom", "giant$mush", "g$mushroom", "g$mush", "huge$mushroom", "huge$mush", "h$mushroom", "h$mush", "big$mushroom", "big$mush", "b$mushroom", "b$mush"],
     MUSHROOM: ["mushroom", "mush", "shroom"],
 }
