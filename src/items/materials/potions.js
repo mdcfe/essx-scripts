@@ -2,39 +2,41 @@ const _ = require("lodash");
 
 const potionList = require("./data/potions.json");
 
-const retrieve = () => {
-    return _.flatten(
-        potionList.map(potion => [
+const retrieve = () => _.flatten(
+    potionList.map(potion => {
+        const base = {
+            skipSimple: true,
+            meta: {
+                potion,
+                potionModifier: getModifier(potion)
+            }
+        };
+
+        return [
             {
                 name: "POTION",
-                skipSimple: true,
-                meta: {
-                    potion
-                }
+                ...base
             },
             {
                 name: "SPLASH_POTION",
-                skipSimple: true,
-                meta: {
-                    potion
-                }
+                ...base
             },
             {
                 name: "LINGERING_POTION",
-                skipSimple: true,
-                meta: {
-                    potion
-                }
+                ...base
             },
             {
                 name: "TIPPED_ARROW",
-                skipSimple: true,
-                meta: {
-                    potion
-                }
+                ...base
             },
-        ])
-    );
+        ];
+    })
+);
+
+function getModifier(potion) {
+    return potion.includes("long_") ? "long"
+        : potion.includes("strong_") ? "strong"
+        : null;
 }
 
-module.exports = { retrieve }
+module.exports = { retrieve };
