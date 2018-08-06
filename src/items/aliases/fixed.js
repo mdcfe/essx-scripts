@@ -24,7 +24,7 @@ const aliases = {
     STONE_BUTTON: ["smoothstonebutton", "sstonebutton", "sbutton", "button"],
     DISPENSER: ["dispense"],
     NOTE_BLOCK: ["musicblock", "nblock", "mblock"],
-    
+    JUKEBOX: ["jbox"],
     // == Decorative ==
     GLASS: ["blockglass", "glassblock"],
     SANDSTONE: ["sastone"],
@@ -35,6 +35,7 @@ const aliases = {
     RED_SANDSTONE: ["rsstone", "redsandstone"],
     CHISELED_RED_SANDSTONE: ["crstone", "redsandstonechiseled", "chiseledredsandstone"],
     CUT_RED_SANDSTONE: ["srstone", "redsandstonesmooth", "smoothredsandstone"],
+    COBWEB: ["spiderweb", "sweb", "cweb", "web"],
 }
 
 const validMaterials = Object.keys(aliases);
