@@ -13,6 +13,6 @@ module.exports = async function process(material) {
     );
 
     return _.flatten(
-        sources.map(s => s.retrieve());
+        sources.map(s => s.retrieve())
     );
 }
