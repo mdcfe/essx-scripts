@@ -27,8 +27,9 @@ async function start() {
     const jsonMissing = _.difference(csvKeys, jsonKeys)
         .filter(s => !excludes(s));
     const jsonExtra = _.difference(jsonKeys, csvKeys);
+    const jsonPresent = _.intersection(jsonKeys, csvKeys);
 
-    const jsonPresentCount = csvKeys.length - jsonMissing.length;
+    const jsonPresentCount = jsonPresent.length;
 
     await fs.writeFile(reportPath, JSON.stringify({
         stats: {
