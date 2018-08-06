@@ -28,7 +28,7 @@ async function start() {
 
     const jsonPresentCount = csvKeys.length - jsonMissing.length;
 
-    fs.writeFile(reportPath, JSON.stringify({
+    await fs.writeFile(reportPath, JSON.stringify({
         stats: {
             csvTotal: csvKeys.length,
             jsonTotal: jsonKeys.length,
@@ -40,6 +40,7 @@ async function start() {
         missing: jsonMissing,
         extra: jsonExtra
     }, null, 4));
+    console.log("Items report saved.");
 }
 
 function getCsvAliases(csv) {
