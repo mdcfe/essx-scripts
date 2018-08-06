@@ -15,7 +15,7 @@ const outPath = path.resolve(__dirname, "../out/items.json");
 const materials = {};
 
 async function start() {
-    await retrieveMaterials().forEach(addMaterial);
+    (await retrieveMaterials()).forEach(addMaterial);
 
     console.log("Saving found materials...");
     await fs.writeFile(outPath, JSON.stringify(materials, null, 4));
