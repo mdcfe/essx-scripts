@@ -18,6 +18,7 @@ const exclusions = [
     "stinky", // Removed from game
     "mundaneex", // Removed from game
     "dualbit", // Removed from game
+    "db+pot",
     "regenextendepotion", // Typo
     "slowextenedpotion", // Typo
 ]
