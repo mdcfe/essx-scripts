@@ -11,6 +11,7 @@ const processes = [
     //require("./compound")(require("./data/dye")), // Dyes
     //require("./compound")(require("./data/music")), // Music discs/disks
     //require("./smooth"), // "Smooth" blocks (top slab texture on all sides)
+    require("./compound")(require("./data/misc")), // Misc aliases
 ];
 
 module.exports = function process(material) {
