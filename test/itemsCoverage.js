@@ -9,6 +9,7 @@ const path = require("path");
 const _ = require("lodash");
 
 const download = require("../src/util/dl");
+const excludes = require("./data/itemExclusions");
 
 const itemsJsonPath = path.resolve(__dirname, "../out/items.json");
 const itemsCsvUrl = "https://raw.githubusercontent.com/EssentialsX/Essentials/2.x/Essentials/src/items.csv";
@@ -23,7 +24,8 @@ async function start() {
     const jsonKeys = Object.keys(JSON.parse(itemsJson));
     const csvKeys = getCsvAliases(itemsCsv.replace("\\n", "\n"));
 
-    const jsonMissing = _.difference(csvKeys, jsonKeys);
+    const jsonMissing = _.difference(csvKeys, jsonKeys)
+        .filter(s => !excludes(s));
     const jsonExtra = _.difference(jsonKeys, csvKeys);
 
     const jsonPresentCount = csvKeys.length - jsonMissing.length;
