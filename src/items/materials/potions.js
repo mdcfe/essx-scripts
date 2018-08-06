@@ -1,23 +1,36 @@
-const download = require("./util/dl");
+const potionList = require("./data/potions.json");
 
-const srcFile = "https://hub.spigotmc.org/stash/projects/SPIGOT/repos/bukkit/raw/src/main/java/org/bukkit/potion/PotionType.java?at=refs%2Fheads%2Fmaster";
-const regex = /([A-Z_]+)\(/gm;
-
-const prep = async materials => {
-    await download(srcFile);
-
-    let matches;
-    while ((matches = regex.exec(src)) !== null) {
-        if (matches.index === regex.lastIndex) {
-            regex.lastIndex++;
-        }
-
-        const potionName = matches[1];
-
-        console.log(`Adding material: ${materialName}`);
-        addMaterial(asMaterial(materialName));
-    }
-
+const retrieve = () => {
+    return potionList.map(potion => [
+        {
+            name: "POTION",
+            skipSimple: true,
+            meta: {
+                potion
+            }
+        },
+        {
+            name: "SPLASH_POTION",
+            skipSimple: true,
+            meta: {
+                potion
+            }
+        },
+        {
+            name: "LINGERING_POTION",
+            skipSimple: true,
+            meta: {
+                potion
+            }
+        },
+        {
+            name: "TIPPED_ARROW",
+            skipSimple: true,
+            meta: {
+                potion
+            }
+        },
+    ]);
 }
 
-module.exports = { prep, get }
+module.exports = { retrieve }
