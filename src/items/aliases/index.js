@@ -11,7 +11,6 @@ const processes = [
     //require("./compound")(require("./data/music")), // Music discs/disks
     //require("./smooth"), // "Smooth" blocks (top slab texture on all sides)
     //require("./potions"), // Potions
-    //require("./arrows") // Tipped arrows
 ];
 
 module.exports = function process(material) {
