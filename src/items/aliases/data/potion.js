@@ -10,27 +10,27 @@ const potions = {
     thick: ["thick"],
     awkward: ["awkward"],
 
-    night_vision: ["nightvision", "nv"],
+    night_vision: ["nightvision", "nv", "nvision", "nightv", "darkvis", "dvision", "darkv"],
     long_night_vision: { ref: "night_vision", modifier: "long" },
     
-    invisibility: ["invisibility", "invis"],
+    invisibility: ["invisibility", "invis", "invisible", "inv"],
     long_invisibility: { ref: "invisibility", modifier: "long" },
     
     leaping: ["leaping", "leap"],
     strong_leaping: { ref: "leaping", modifier: "strong" },
     long_leaping: { ref: "leaping", modifier: "long" },
     
-    fire_resistance: ["fireresist", "fireres"],
+    fire_resistance: ["fireresist", "fireres", "fireresistance"],
     long_fire_resistance: { ref: "fire_resistance", modifier: "long" },
     
-    swiftness: ["swiftness", "swift"],
+    swiftness: ["swiftness", "swift", "speed"],
     strong_swiftness: { ref: "swiftness", modifier: "strong" },
     long_swiftness: { ref: "swiftness", modifier: "long" },
     
     slowness: ["slowness", "slow"],
     long_slowness: { ref: "slowness", modifier: "long" },
     
-    water_breathing: ["waterbreathing", "wb"],
+    water_breathing: ["waterbreathing", "wb", "waterbreath", "breathing", "breath"],
     long_water_breathing: { ref: "water_breathing", modifier: "long" },
     
     healing: ["healing", "heal", "life", "h"],
