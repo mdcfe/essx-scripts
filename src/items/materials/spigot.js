@@ -29,3 +29,5 @@ const retrieve = () => {
     
     return materialsFound;
 }
+
+module.exports = { prep, retrieve };
