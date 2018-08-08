@@ -12,6 +12,8 @@ const processAliases = require("./items/aliases");
 
 const outPath = path.resolve(__dirname, "../out/items.json");
 
+const filterProps = ["skipSimple"];
+
 const materials = {};
 
 async function start() {
@@ -24,6 +26,9 @@ async function start() {
 
 function addMaterial(material) {
     const keys = processAliases(material);
+
+    filterProps.forEach(prop => material[prop] = undefined);
+
     const mainKey = keys.shift();
 
     materials[mainKey] = material; // Store the material object once
