@@ -1,7 +1,7 @@
 const download = require("../../util/dl");
 
 const srcFile = "https://hub.spigotmc.org/stash/projects/SPIGOT/repos/bukkit/raw/src/main/java/org/bukkit/Material.java?at=refs%2Fheads%2Fmaster";
-const regex = /([A-Z_]+)\(/gm;
+const regex = /([A-Z13_]+)\(/gm;
 
 let src;
 
