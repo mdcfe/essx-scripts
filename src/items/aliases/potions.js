@@ -2,20 +2,23 @@ const _ = require("lodash");
 
 const { modifiers, potions, materials } = require("./data/potion");
 
-const test = ({ name, meta }) => !!meta
-    && !!meta.potion
-    && Object.keys(potions).includes(meta.potion)
-    && Object.keys(materials).includes(name);
+const test = ({ material, potionNbt, potionModifier }) => !!potionNbt
+    && Object.keys(potions).includes(potionNbt)
+    && Object.keys(materials).includes(material);
 
-const get = ({ name, meta }) => {
-    let potion = potions[meta.potion];
-    let modifier = potion.modifier;
+const get = ({ material, potionNbt, potionModifier }) => {
+    const potionObj = potions[potionNbt];
 
-    if (potion.ref) {
-        potion = potions[potion.ref];
+    let potNames;
+    let modifier = potionModifier;
+
+    if (potionObj.ref) {
+        potNames = potions[potionObj.ref];
+    } else {
+        potNames = potionObj;
     }
 
-    return joinPotion(name, potion, modifier)
+    return joinPotion(material, potNames, modifier)
 };
 
 function joinPotion(material, potNames, modifier) {

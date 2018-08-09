@@ -23,7 +23,7 @@ const retrieve = () => {
         if (materialName.includes("LEGACY_")) continue;
 
         materialsFound.push({
-            name: materialName
+            material: materialName
         });
     }
     

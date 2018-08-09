@@ -6,32 +6,35 @@ const retrieve = () => _.flatten(
     potionList.map(potion => {
         const base = {
             skipSimple: true,
-            meta: {
-                potion,
-                potionModifier: getModifier(potion)
-            }
+            potionNbt: potion,
+            potionEnum: getEnumName(potion),
+            potionModifier: getModifier(potion)
         };
 
         return [
             {
-                name: "POTION",
+                material: "POTION",
                 ...base
             },
             {
-                name: "SPLASH_POTION",
+                material: "SPLASH_POTION",
                 ...base
             },
             {
-                name: "LINGERING_POTION",
+                material: "LINGERING_POTION",
                 ...base
             },
             {
-                name: "TIPPED_ARROW",
+                material: "TIPPED_ARROW",
                 ...base
             },
         ];
     })
 );
+
+function getEnumName(potion) {
+    return potion.replace("long_", "").replace("strong_", "");
+}
 
 function getModifier(potion) {
     return potion.includes("long_") ? "long"

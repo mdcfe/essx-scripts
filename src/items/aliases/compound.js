@@ -1,15 +1,15 @@
 const _ = require("lodash");
 
-function test({ name }) {
-    return (includesKeys(name, this.prefixes) && includesKeys(name, this.suffixes))
-        || matchesSurround(name, this);
+function test({ material }) {
+    return (includesKeys(material, this.prefixes) && includesKeys(material, this.suffixes))
+        || matchesSurround(material, this);
 }
 
-function get({ name }) {
+function get({ material }) {
     const prefix = Object.keys(this.prefixes)
-        .filter(p => name.includes(p))[0]; // always first match, eg. prefers LIGHT_BLUE over BLUE
+        .filter(p => material.includes(p))[0]; // always first match, eg. prefers LIGHT_BLUE over BLUE
     const suffix = Object.keys(this.suffixes)
-        .filter(s => name.includes(s))[0];
+        .filter(s => material.includes(s))[0];
 
     return _.flatten(
         this.prefixes[prefix].map(prefix =>
