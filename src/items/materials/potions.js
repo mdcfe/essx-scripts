@@ -6,9 +6,12 @@ const retrieve = () => _.flatten(
     potionList.map(potion => {
         const base = {
             skipSimple: true,
-            potionNbt: potion,
-            potionEnum: getEnumName(potion),
-            potionModifier: getModifier(potion)
+            potionData: {
+                vanillaType: potion,
+                bukkitType: getEnumName(potion),
+                isStrong: potion.includes("strong_"),
+                isLong: potion.includes("long_"),
+            }
         };
 
         return [
