@@ -16,8 +16,8 @@ const get = ({ material, potionData }) => {
         potNames = potionObj;
     }
 
-    let modifier = potionData.isLong ? "long" :
-        potionData.isStrong ? "strong" :
+    let modifier = potionData.extended ? "long" :
+        potionData.upgraded ? "strong" :
         null;
 
     return joinPotion(material, potNames, modifier)
