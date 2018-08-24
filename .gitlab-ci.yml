@@ -8,7 +8,8 @@ image: node:latest
 cache:
   paths:
     - ./node_modules
-  
+    - ./repo
+
 before_script:
   - mkdir out
 
@@ -21,3 +22,16 @@ run_items:
     paths:
       - out/items.json
       - out/items.report.json
+
+run_locale:
+  image: python:3.7
+  script:
+    - apt install -y git
+    - git clone https://github.com/EssentialsX/Essentials repo
+    - cd repo
+    - git pull
+    - cd Essentials/src
+    - python ../../../python/localeReport.py > ../../../out/locale.report.md
+  artifacts:
+    paths:
+      - out/locale.report.md
