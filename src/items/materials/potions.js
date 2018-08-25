@@ -8,7 +8,7 @@ const retrieve = () => _.flatten(
             skipSimple: true,
             potionData: {
                 vanillaType: potion,
-                bukkitType: getEnumName(potion),
+                type: getEnumName(potion),
                 upgraded: potion.includes("strong_"),
                 extended: potion.includes("long_"),
             }
