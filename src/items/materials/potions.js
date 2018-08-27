@@ -36,7 +36,7 @@ const retrieve = () => _.flatten(
 );
 
 function getEnumName(potion) {
-    return potion.replace("long_", "").replace("strong_", "");
+    return potion.replace("long_", "").replace("strong_", "").toUpperCase();
 }
 
 function getModifier(potion) {
