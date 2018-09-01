@@ -1,0 +1,7 @@
+{
+    "leaping": "JUMP",
+    "swiftness": "SPEED",
+    "healing": "INSTANT_HEAL",
+    "harming": "INSTANT_HARM",
+    "regeneration": "REGEN"
+}
