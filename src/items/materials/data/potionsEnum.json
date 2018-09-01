@@ -1,4 +1,5 @@
 {
+    "empty": "UNCRAFTABLE",
     "leaping": "JUMP",
     "swiftness": "SPEED",
     "healing": "INSTANT_HEAL",
