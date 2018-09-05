@@ -1,7 +1,7 @@
 // Colours
 const prefixes = {
     GOLD: ["gold", "g"],
-    IRON: ["iron", "i", "steel", "s"],
+    IRON: ["iron", "i", "steel", "s", "st"],
     COAL: ["coal", "c"],
     LAPIS: ["lapislazuli", "lapis", "l"],
     DIAMOND: ["crystal", "diamond", "d"],
