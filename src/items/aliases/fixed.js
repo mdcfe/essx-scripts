@@ -36,6 +36,19 @@ const aliases = {
     CHISELED_RED_SANDSTONE: ["crstone", "redsandstonechiseled", "chiseledredsandstone"],
     CUT_RED_SANDSTONE: ["srstone", "redsandstonesmooth", "smoothredsandstone"],
     COBWEB: ["spiderweb", "sweb", "cweb", "web"],
+    // == Plants (not crops) ==
+    TALL_GRASS: ["longgrass", "wildgrass", "grasslong", "grasstall", "grasswild", "lgrass", "tgrass", "wgrass"],
+    DEAD_BUSH: ["bush", "deadshrub", "dshrub", "dbush", "deadsapling"],
+    DANDELION: ["yellowdandelion", "ydandelion", "yflower", "flower"],
+    POPPY: ["rose", "redrose", "rrose", "redflower", "rflower", "poppy", "redpoppy"],
+    BLUE_ORCHID: ["cyanorchid", "lightblueorchid", "lblueorchid", "orchid", "cyanflower", "lightblueflower", "lblueflower"],
+    ALLIUM: ["magentaallium", "magentaflower"],
+    AZURE_BLUET: ["whiteazurebluet", "abluet", "azureb", "houstonia"],
+    RED_TULIP: ["tulipred", "rtulip", "tulipr"],
+    WHITE_TULIP: ["tulipwhite", "wtulip", "tulipw"],
+    PINK_TULIP: ["tulippink", "ptulip", "tulipp"],
+    ORANGE_TULIP: ["tuliporange", "otulip", "tulipo"],
+    OXEYE_DAISY: ["oxeye", "daisy", "daisyoxeye", "moondaisy", "daisymoon", "lightgrayoxeye", "lgrayoxeye", "lightgreyoxeye", "lgreyoxeye"],
 }
 
 const validMaterials = Object.keys(aliases);
