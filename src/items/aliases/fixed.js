@@ -39,7 +39,7 @@ const aliases = {
     // == Plants (not crops) ==
     TALL_GRASS: ["longgrass", "wildgrass", "grasslong", "grasstall", "grasswild", "lgrass", "tgrass", "wgrass"],
     DEAD_BUSH: ["bush", "deadshrub", "dshrub", "dbush", "deadsapling"],
-    DANDELION: ["yellowdandelion", "ydandelion", "yflower", "flower"],
+    DANDELION: ["yellowdandelion", "ydandelion", "yellowflower", "yflower", "flower"],
     POPPY: ["rose", "redrose", "rrose", "redflower", "rflower", "poppy", "redpoppy"],
     BLUE_ORCHID: ["cyanorchid", "lightblueorchid", "lblueorchid", "orchid", "cyanflower", "lightblueflower", "lblueflower"],
     ALLIUM: ["magentaallium", "magentaflower"],
@@ -49,6 +49,13 @@ const aliases = {
     PINK_TULIP: ["tulippink", "ptulip", "tulipp"],
     ORANGE_TULIP: ["tuliporange", "otulip", "tulipo"],
     OXEYE_DAISY: ["oxeye", "daisy", "daisyoxeye", "moondaisy", "daisymoon", "lightgrayoxeye", "lgrayoxeye", "lightgreyoxeye", "lgreyoxeye"],
+    // == End Materials ==
+    END_PORTAL: ["endergoo", "enderportal", "endgoo", "eportal", "egoo"],
+    END_PORTAL_FRAME: ["endergooframe", "enderportalframe", "endgooframe", "eportalframe", "egooframe", "enderframe", "endframe"],
+    END_STONE: ["enderstone", "endrock", "enderrock", "erock", "estone"],
+    DRAGON_EGG: ["enderdragonegg", "endegg", "degg", "bossegg", "begg"],
+    ELYTRA: ["hangglider", "glider", "wings", "wing", "playerwings", "playerwing", "pwings", "pwing"],
+
 }
 
 const validMaterials = Object.keys(aliases);
