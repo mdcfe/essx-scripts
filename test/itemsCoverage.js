@@ -1,6 +1,6 @@
 /**
  * itemsCoverage
- * 
+ *
  * Compares items.json to items.csv; reports missing/extra aliases in items.json.
  */
 
@@ -29,16 +29,17 @@ async function start() {
     const jsonExtra = _.difference(jsonKeys, csvKeys);
     const jsonPresent = _.intersection(jsonKeys, csvKeys);
 
-    const jsonPresentCount = jsonPresent.length;
+    const jsonCoveredCount = csvKeys.length - jsonMissing.length;
 
     await fs.writeFile(reportPath, JSON.stringify({
         stats: {
             csvTotal: csvKeys.length,
             jsonTotal: jsonKeys.length,
-            present: jsonPresentCount,
+            present: jsonPresent.length,
             missing: jsonMissing.length,
             extra: jsonExtra.length,
-            coverage: ((jsonPresentCount / csvKeys.length) * 100).toFixed(2)
+            covered: jsonCoveredCount,
+            coverage: ((jsonCoveredCount / csvKeys.length) * 100).toFixed(2)
         },
         missing: jsonMissing,
         extra: jsonExtra
@@ -55,7 +56,7 @@ function getCsvAliases(csv) {
         if (m.index === itemsCsvRegex.lastIndex) {
             itemsCsvRegex.lastIndex++;
         }
-        
+
         // The result can be accessed through the `m`-variable.
         aliases.push(m[1]);
     }
