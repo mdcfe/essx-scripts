@@ -41,6 +41,6 @@ const suffixes = {
 
 // Certain full names that shouldn't be outputted as aliases here, as they refer to another material
 // eg. prevents WHITE_STAINED_GLASS overriding "glass"
-const protected = ["glass", "glasspane", "clay", "chest"];
+const protected = ["glass", "glasspane", "clay", "chest", "terracotta"];
 
 module.exports = { prefixes, suffixes, protected };
