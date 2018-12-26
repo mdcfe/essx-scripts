@@ -1,7 +1,7 @@
 const prefixes = {
     // Priority
     ZOMBIE_PIGMAN: ["zombiepigman", "zpigman", "pigman", "zombiepman", "zpman", "zombiepigm", "zpigm", "zombiepig", "zpig", "zombiepm", "zombiep"],
-    ZOMBIE_VILLAGER: ["zombievillager", "zvillager", "deadvillager"],
+    ZOMBIE_VILLAGER: ["zombievillager", "zvillager", "deadvillager", "dvillager", "zvill", "dvill"],
     CAVE_SPIDER: ["cavespider"],
     ZOMBIE_HORSE: ["zombiehorse", "zhorse"],
     SKELETON_HORSE: ["skeletonhorse", "shorse", "bonehorse"],
@@ -57,6 +57,7 @@ const prefixes = {
     TROPICAL_FISH: ["tropicalfish", "tropicfish", "tfish", "tropicalf", "tropicf"],
     DROWNED: ["drowned"],
     DOLPHIN: ["dolphin", "ecco"],
+    DRAGON: ["dragon"],
 };
 
 const suffixes = {
