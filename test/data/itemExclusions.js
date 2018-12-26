@@ -1,7 +1,7 @@
 const exclusions = [
     ...require("./exclusions/potions"),
     ...require("./exclusions/dslabs"),
-    ...require("./exclusions/legacy"),
+    ...require("./exclusions/nonsense"),
 ]
 
 function matches(input, pattern) {
