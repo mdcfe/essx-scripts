@@ -1,5 +1,7 @@
 const download = require("../../util/dl");
 
+const excludes = require("./data/excludes");
+
 const srcFile = "https://hub.spigotmc.org/stash/projects/SPIGOT/repos/bukkit/raw/src/main/java/org/bukkit/Material.java?at=refs%2Fheads%2Fmaster";
 const regex = /([A-Z13_]+)\(/gm;
 
@@ -21,8 +23,12 @@ const retrieve = () => {
 
         // Skip legacy materials
         if (materialName.includes("LEGACY_")) continue;
+
         // Skip unspawnable wall materials
         if (materialName.includes("WALL_")) continue;
+
+        // Skip specific excludes
+        if (excludes.includes(materialName)) continue;
 
         materialsFound.push({
             material: materialName
