@@ -27,6 +27,7 @@ const aliases = {
     JUKEBOX: ["jbox"],
     // == Decorative ==
     GLASS: ["blockglass", "glassblock"],
+    GLASS_PANE: ["glassp", "paneglass", "pglass", "flatglass", "fglass", "skinnyglass", "glassflat", "glassf", "glassskinny", "glasss"],
     SANDSTONE: ["sastone"],
     CHISELED_SANDSTONE: ["cpstone", "creepersandstone", "creepersastone", "creepsandstone", "creepsastone", "csandstone", "csastone", "hieroglyphicsandstone", "hieroglyphicsastone", "hieroglyphsandstone", "hieroglyphsastone", "hsandstone", "hsastone", "pyramidsandstone", "pyramidsastone", "psandstone", "psastone", "chiseledsastone", "chiselsandstone", "chiselsastone"],
     // "CUT_SANDSTONE" used to be called "SMOOTH_SANDSTONE"
@@ -52,6 +53,8 @@ const aliases = {
     PINK_TULIP: ["tulippink", "ptulip", "tulipp"],
     ORANGE_TULIP: ["tuliporange", "otulip", "tulipo"],
     OXEYE_DAISY: ["oxeye", "daisy", "daisyoxeye", "moondaisy", "daisymoon", "lightgrayoxeye", "lgrayoxeye", "lightgreyoxeye", "lgreyoxeye"],
+    CACTUS: ["cactuses", "cacti"],
+    VINE: ["vines", "greenvines", "greenvine", "gardenvines", "gardenvine", "vinesgreen", "vinegreen", "vinesgarden", "vinegarden", "vinesg", "vineg", "gvines", "gvine"],
     // == Combat ==
     SHIELD: ["handshield", "woodshield", "woodenshield"],
     TOTEM_OF_UNDYING: ["totem"],
@@ -61,6 +64,7 @@ const aliases = {
     JACK_O_LANTERN: ["pumpkinlantern", "glowingpumpkin", "lightpumpkin", "jpumpkin", "plantren", "glowpumpkin", "gpumpkin", "lpumpkin"],
     BEETROOT: ["broot", "beet", "beets", "beetplant", "beetcrop"],
     BEETROOT_SEEDS: ["beetrootseed", "brootseed", "brootseeds", "beetseed", "beetseeds", "beetsseeds", "beetplantseeds", "beetcropseeds"],
+    MELON: ["watermelon", "greenmelon", "melongreen", "melonblock", "watermelonblock", "greenmelonblock"],
     // == Food ==
     BEETROOT_SOUP: ["brootsoup", "beetsoup", "beetssoup", "beetplantsoup", "beetcropsoup", "redsoup"],
     // == End Materials ==
