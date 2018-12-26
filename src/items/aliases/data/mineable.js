@@ -30,6 +30,7 @@ const suffixes = {
     CHESTPLATE: ["chestplate", "platebody", "plate", "shirt", "tunic"],
     LEGGINGS: ["leggings", "legs", "pants"],
     BOOTS: ["boots", "shoes"],
+    HORSE_ARMOR: ["horsearmor", "harmor", "armor"]
 }
 
 // Ambiguous aliases that shouldn't get outputted here
