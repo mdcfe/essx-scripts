@@ -17,7 +17,6 @@ const aliases = {
     /* ID 9 and 11 don't have a 1.13 equivalent, so point to the WATER/LAVA types */
     WATER: ["stationarywater", "stillwater", "swater"],
     LAVA: ["stationarylava", "stilllava", "slava"],
-    RED_SAND: ["rsand"], // misc
     // == Redstone ==
     STONE_PRESSURE_PLATE: ["stonepressplate", "stonepplate", "stoneplate", "spressureplate", "spressplate", "spplate", "splate", "smoothstonepressueplate", "smoothstonepressplate", "smoothstonepplate", "smoothstoneplate", "sstonepressureplate", "sstonepressplate", "sstonepplate", "sstoneplate"],
     REDSTONE_TORCH: ["rstonetorch", "redstorch", "redtorch", "rstorch"],
@@ -26,6 +25,7 @@ const aliases = {
     NOTE_BLOCK: ["musicblock", "nblock", "mblock"],
     JUKEBOX: ["jbox"],
     // == Decorative ==
+    RED_SAND: ["rsand"], // misc
     GLASS: ["blockglass", "glassblock"],
     GLASS_PANE: ["glassp", "paneglass", "pglass", "flatglass", "fglass", "skinnyglass", "glassflat", "glassf", "glassskinny", "glasss"],
     SANDSTONE: ["sastone"],
@@ -40,6 +40,7 @@ const aliases = {
     IRON_BARS: ["ironbarsb", "ironbarsblock", "ironfence", "metalbars", "metalbarsb", "metalbarsblock", "metalfence", "jailbars", "jailbarsb", "jailbarsblock", "jailfence", "mbars", "mbarsb", "mbarsblock", "mfence", "jbars", "jbarsb", "jbarsblock", "ibars", "ibarsb", "ibarsblock", "ifence"],
     CHEST: ["container"],
     CRAFTING_TABLE: ["workbench", "craftingbench", "crafterbench", "craftbench", "worktable", "craftertable", "crafttable", "wbench", "cbench"],
+    ICE: ["frozenwater", "waterfrozen", "freezewater", "waterfreeze"],
     // == Plants (not crops) ==
     TALL_GRASS: ["longgrass", "wildgrass", "grasslong", "grasstall", "grasswild", "lgrass", "tgrass", "wgrass"],
     DEAD_BUSH: ["bush", "deadshrub", "dshrub", "dbush", "deadsapling"],
