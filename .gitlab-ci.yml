@@ -12,7 +12,7 @@ cache:
 
 before_script:
   - mkdir out
-  - git clone https://github.com/EssentialsX/Essentials repo
+  - git clone https://github.com/EssentialsX/Essentials repo || true
   - cd repo
   - git pull
   - cd ..
