@@ -1,13 +1,13 @@
 const _ = require("lodash");
 
 const sources = [
-    require("./spigot"), // ABC_XYZ -> abcxyz
-    require("./potions"), // Manually-added aliases
+    require("./spigot"), // all materials from Materials.java
+    require("./potions"), // All potions with effects
 ];
 
 module.exports = async function process(material) {
     await Promise.all(
-        sources.map(s => 
+        sources.map(s =>
             s.prep ? s.prep() : null
         )
     );
