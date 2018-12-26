@@ -41,6 +41,7 @@ const aliases = {
     CHEST: ["container"],
     CRAFTING_TABLE: ["workbench", "craftingbench", "crafterbench", "craftbench", "worktable", "craftertable", "crafttable", "wbench", "cbench"],
     ICE: ["frozenwater", "waterfrozen", "freezewater", "waterfreeze"],
+    HAY_BLOCK: ["hay", "haybale", "baleofhay", "hayofbale"],
     // == Plants (not crops) ==
     TALL_GRASS: ["longgrass", "wildgrass", "grasslong", "grasstall", "grasswild", "lgrass", "tgrass", "wgrass"],
     DEAD_BUSH: ["bush", "deadshrub", "dshrub", "dbush", "deadsapling"],
