@@ -18,15 +18,17 @@ const retrieve = () => {
         }
 
         const materialName = matches[1];
-        
+
         // Skip legacy materials
         if (materialName.includes("LEGACY_")) continue;
+        // Skip unspawnable wall materials
+        if (materialName.includes("WALL_")) continue;
 
         materialsFound.push({
             material: materialName
         });
     }
-    
+
     return materialsFound;
 }
 
