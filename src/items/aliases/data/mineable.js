@@ -33,6 +33,7 @@ const suffixes = {
     HORSE_ARMOR: ["horsearmor", "harmor", "armor"],
     // Other
     DOOR: ["door", "!door"],
+    TRAPDOOR: ["trapdoor", "doortrap", "hatch", "tdoor", "doort", "trapd", "dtrap"],
 }
 
 // Ambiguous aliases that shouldn't get outputted here
