@@ -62,7 +62,7 @@ const prefixes = {
 };
 
 const suffixes = {
-    SPAWN_EGG: ["egg", "!egg", "spawnegg", "!spawnegg"],
+    SPAWN_EGG: ["egg", "!egg", "spawnegg", "!spawnegg", "spawn", "!spawn"],
     HEAD: ["head", "skull", "!head", "!steve", "mask", "headmask"],
     SKULL: ["head", "skull", "!head", "!steve", "mask", "headmask"],
     BUCKET: ["bucket", "pail"],
