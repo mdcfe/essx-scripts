@@ -4,4 +4,9 @@ module.exports = [
     "lockchest", // ^
     "jokechest", // ^
     "parrot", // Should be parrotegg
+    "litfurnace", // Not spawnable
+    "lfurnace", // ^
+    "burningfurnace", // ^
+    "burnfurnace", // ^
+    "bfurnace", // ^
 ]
