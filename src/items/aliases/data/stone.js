@@ -27,8 +27,6 @@ Object.keys(prefixes)
         });
     });
 
-console.log(prefixes);
-
 // All stone bricks end in STONE_BRICKS
 const suffixes = {
     STONE_BRICKS: ["stonebrick", "stonebrickblock", "stonebb", "sbrick", "sbricks"],
