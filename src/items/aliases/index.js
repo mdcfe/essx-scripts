@@ -9,7 +9,8 @@ const processes = [
     require("./compound")(require("./data/mineable")), // Ores, armo(u)r, tools
     require("./compound")(require("./data/transport")), // Minecarts
     require("./compound")(require("./data/records")), // Music records
-    require("./compound")(require("./data/spawnable")),
+    require("./compound")(require("./data/spawnable")), // Mobs
+    require("./compound")(require("./data/stone")), // Stone bricks
     //require("./smooth"), // "Smooth" blocks (top slab texture on all sides)
     require("./compound")(require("./data/misc")), // Misc aliases
 ];
