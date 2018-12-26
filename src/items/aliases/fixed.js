@@ -50,9 +50,16 @@ const aliases = {
     PINK_TULIP: ["tulippink", "ptulip", "tulipp"],
     ORANGE_TULIP: ["tuliporange", "otulip", "tulipo"],
     OXEYE_DAISY: ["oxeye", "daisy", "daisyoxeye", "moondaisy", "daisymoon", "lightgrayoxeye", "lgrayoxeye", "lightgreyoxeye", "lgreyoxeye"],
+    // == Combat ==
+    SHIELD: ["handshield", "woodshield", "woodenshield"],
+    TOTEM_OF_UNDYING: ["totem"],
     // == Crops ==
     CARVED_PUMPKIN: ["hollowpumpkin", "cutpumpkin", "oldpumpkin", "legacypumpkin"],
     JACK_O_LANTERN: ["pumpkinlantern", "glowingpumpkin", "lightpumpkin", "jpumpkin", "plantren", "glowpumpkin", "gpumpkin", "lpumpkin"],
+    BEETROOT: ["broot", "beet", "beets", "beetplant", "beetcrop"],
+    BEETROOT_SEEDS: ["beetrootseed", "brootseed", "brootseeds", "beetseed", "beetseeds", "beetsseeds", "beetplantseeds", "beetcropseeds"],
+    // == Food ==
+    BEETROOT_SOUP: ["brootsoup", "beetsoup", "beetssoup", "beetplantsoup", "beetcropsoup", "redsoup"],
     // == End Materials ==
     END_PORTAL: ["endergoo", "enderportal", "endgoo", "eportal", "egoo"],
     END_PORTAL_FRAME: ["endergooframe", "enderportalframe", "endgooframe", "eportalframe", "egooframe", "enderframe", "endframe"],
