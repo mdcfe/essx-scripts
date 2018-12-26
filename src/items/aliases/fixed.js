@@ -37,6 +37,8 @@ const aliases = {
     CUT_RED_SANDSTONE: ["srstone", "redsandstonesmooth", "smoothredsandstone"],
     COBWEB: ["spiderweb", "sweb", "cweb", "web"],
     IRON_BARS: ["ironbarsb", "ironbarsblock", "ironfence", "metalbars", "metalbarsb", "metalbarsblock", "metalfence", "jailbars", "jailbarsb", "jailbarsblock", "jailfence", "mbars", "mbarsb", "mbarsblock", "mfence", "jbars", "jbarsb", "jbarsblock", "ibars", "ibarsb", "ibarsblock", "ifence"],
+    CHEST: ["container"],
+    CRAFTING_TABLE: ["workbench", "craftingbench", "crafterbench", "craftbench", "worktable", "craftertable", "crafttable", "wbench", "cbench"],
     // == Plants (not crops) ==
     TALL_GRASS: ["longgrass", "wildgrass", "grasslong", "grasstall", "grasswild", "lgrass", "tgrass", "wgrass"],
     DEAD_BUSH: ["bush", "deadshrub", "dshrub", "dbush", "deadsapling"],
@@ -53,6 +55,7 @@ const aliases = {
     // == Combat ==
     SHIELD: ["handshield", "woodshield", "woodenshield"],
     TOTEM_OF_UNDYING: ["totem"],
+    SPAWNER: ["mobspawner", "mobcage", "monsterspawner", "monstercage", "mspawner", "mcage", "cage"],
     // == Crops ==
     CARVED_PUMPKIN: ["hollowpumpkin", "cutpumpkin", "oldpumpkin", "legacypumpkin"],
     JACK_O_LANTERN: ["pumpkinlantern", "glowingpumpkin", "lightpumpkin", "jpumpkin", "plantren", "glowpumpkin", "gpumpkin", "lpumpkin"],

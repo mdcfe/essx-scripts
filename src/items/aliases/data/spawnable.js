@@ -6,11 +6,12 @@ const prefixes = {
     ZOMBIE_HORSE: ["zombiehorse", "zhorse"],
     SKELETON_HORSE: ["skeletonhorse", "shorse", "bonehorse"],
     ELDER_GUARDIAN: ["elderguardian", "eguardian"],
+    WITHER_SKELETON: ["witherskeleton", "wskeleton", "withersk", "wsk", "wither"],
     // Player heads
-    PLAYER: ["", "player", "p", "steve"],
+    PLAYER: ["", "player", "p", "steve", "human"],
     // All other mobs from items.csv
-    CREEPER: ["creeper"],
-    SKELETON: ["skeleton"],
+    CREEPER: ["creeper", "cr"],
+    SKELETON: ["skeleton", "sk"],
     SPIDER: ["spider"],
     GIANT: ["giant"],
     ZOMBIE: ["zombie"],
@@ -22,6 +23,7 @@ const prefixes = {
     BAT: ["bat"],
     WITCH: ["witch"],
     ENDERMITE: ["endermite"],
+    GHAST: ["ghast"],
     GUARDIAN: ["guardian"],
     SHULKER: ["shulker", "shulk"],
     PIG: ["pig"],
@@ -40,7 +42,6 @@ const prefixes = {
     PARROT: ["parrot"],
     VILLAGER: ["villager"],
     // Mobs missing from items.csv
-    WITHER_SKELETON: ["witherskeleton", "wskeleton", "withersk", "wsk"],
     HUSK: ["husk"],
     STRAY: ["stray"],
     EVOKER: ["evoker"],
@@ -62,8 +63,8 @@ const prefixes = {
 
 const suffixes = {
     SPAWN_EGG: ["egg", "!egg", "spawnegg", "!spawnegg"],
-    HEAD: ["head", "skull"],
-    SKULL: ["head", "skull"],
+    HEAD: ["head", "skull", "!head", "!steve", "mask", "headmask"],
+    SKULL: ["head", "skull", "!head", "!steve", "mask", "headmask"],
     BUCKET: ["bucket", "pail"],
 };
 
