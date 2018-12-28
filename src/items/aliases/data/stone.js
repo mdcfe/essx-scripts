@@ -31,14 +31,18 @@ Object.keys(prefixes)
 const suffixes = {
     STONE_BRICKS: ["stonebrick", "stonebrickblock", "stonebb", "sbrick", "sbricks"],
     COBBLESTONE: ["cobblestone", "cstone", "cobble"],
-    STONE: ["stone", "smoothstone", "sstone"],
+    $: ["stone", "smoothstone", "sstone"],
 }
 
 // Certain full names that shouldn't be outputted as aliases here, as they refer to another material
 const protected = [];
 
+// Materials that should never be matched
+const excluded = ["COBBLESTONE_WALL"];
+
 module.exports = {
     prefixes,
     suffixes,
-    protected
+    protected,
+    excluded
 };
