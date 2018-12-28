@@ -1,5 +1,4 @@
 module.exports = {
-    prep: null,
     test: ({ skipSimple }) => !skipSimple,
     get: ({ material }) => [
         material.toLowerCase(), // PINEAPPLE_PLANT -> pineapple_plant

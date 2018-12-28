@@ -81,7 +81,6 @@ const aliases = {
 const validMaterials = Object.keys(aliases);
 
 module.exports = {
-    prep: null,
     test: ({ material }) => validMaterials.includes(material),
     get: ({ material }) => aliases[material],
 }
