@@ -30,7 +30,7 @@ Object.keys(prefixes)
 // All stone bricks end in STONE_BRICKS
 const suffixes = {
     STONE_BRICKS: ["stonebrick", "stonebrickblock", "stonebb", "sbrick", "sbricks"],
-    COBBLESTONE: ["cobblestone", "cstone", "cobble"],
+    _COBBLESTONE: ["cobblestone", "cstone", "cobble"],
     $: ["stone", "smoothstone", "sstone"],
 }
 
@@ -38,7 +38,7 @@ const suffixes = {
 const protected = [];
 
 // Materials that should never be matched
-const excluded = ["COBBLESTONE_WALL"];
+const excluded = [];
 
 module.exports = {
     prefixes,
