@@ -1,14 +1,7 @@
-// Meat modifier
-const prefixes = {
-    COOKED: ["cooked", "cook", "c", "grilled", "grill", "g", "roasted", "roast", "ro", "bbq", "toasted"],
-    // default - uncooked
-    "": ["raw", "ra", "uncooked", "plain", ""]
-};
-
 // Types of meat/fish
-const suffixes = {
+const prefixes = {
     BEEF: ["beef", "steak", "cowmeat"],
-    CHICKEN: ["chicken", "!chicken"],
+    CHICKEN: ["chicken"],
     COD: ["fish", "cod"], // What used to be just "fish" is now cod
     MUTTON: ["mutton", "sheepmeat"],
     PORKCHOP: ["pork", "porkchop"],
@@ -18,8 +11,15 @@ const suffixes = {
     TROPICAL_FISH: ["clownfish", "nemo", "clfish", "fishcl", "nfish", "fishn"],
 }
 
+// Meat modifier
+// These are all inverted as generally the modifiers are prepended ("bbqchicken")
+const suffixes = {
+    COOKED_: ["cooked", "cook", "c", "grilled", "grill", "g", "roasted", "roast", "ro", "bbq", "toasted", "!cooked", "!cook", "!c", "!grilled", "!grill", "!g", "!roasted", "!roast", "!ro", "!bbq", "!toasted"],
+    // default - uncooked
+    $: ["!raw", "!ra", "!uncooked", "!plain", ""]
+};
+
 // Certain full names that shouldn't be outputted as aliases here, as they refer to another material
-// eg. prevents WHITE_STAINED_GLASS overriding "glass"
 const protected = [];
 
 module.exports = {
