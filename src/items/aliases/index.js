@@ -16,9 +16,29 @@ const processes = [
     require("./compound")(require("./data/misc")), // Misc aliases
 ];
 
+const watchedMaterials = [];
+
 module.exports = function process(material) {
+    if (watchedMaterials.includes(material.material)) {
+        console.log(material);
+    }
     return _.flatten(
-        processes.map(p =>
+        processes
+        .map((p, i) => {
+            if (watchedMaterials.includes(material.material) && p) {
+                console.log(i, p.test(material));
+            }
+            return p;
+        })
+        .map(p =>
             p.test(material) ? p.get(material) : []
-        ));
+        )
+        .map((a, i) => {
+            if (watchedMaterials.includes(material.material) && a && a.length > 0) {
+                console.log(i, a);
+            }
+            return a;
+        }))
 }
+
+module.exports.x = processes;
