@@ -1,6 +1,6 @@
 /**
  * genItemsBase
- * 
+ *
  * Pulls Materials from the Material enum class and generates items.json from them.
  */
 
@@ -33,7 +33,7 @@ function addMaterial(material) {
 
     materials[mainKey] = material; // Store the material object once
 
-    console.log(`Adding ${mainKey} with aliases: ${keys}`);
+    //console.log(`Adding ${mainKey} with aliases: ${keys}`);
 
     keys.filter(key => key !== mainKey) // Ensure the actual material key never gets overridden by mistake
         .forEach(key => {
