@@ -31,7 +31,8 @@ Object.keys(prefixes)
 const suffixes = {
     STONE_BRICKS: ["stonebrick", "stonebrickblock", "stonebb", "sbrick", "sbricks"],
     _COBBLESTONE: ["cobblestone", "cstone", "cobble"],
-    $: ["stone", "smoothstone", "sstone"],
+    _SANDSTONE: ["sandstone"],
+    _STONE: ["stone", "smoothstone", "sstone"],
 }
 
 // Certain full names that shouldn't be outputted as aliases here, as they refer to another material
