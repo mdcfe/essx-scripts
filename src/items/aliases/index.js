@@ -4,6 +4,7 @@ const processes = [
     require("./simple"), // ABC_XYZ -> abcxyz
     require("./fixed"), // Manually-added aliases
     require("./potions"), // Potions
+    require("./spawners"),
     require("./compound")(require("./data/color")), // Colo(u)red things (not dyes)
     require("./compound")(require("./data/wood")), // Wood things (not tools)
     require("./compound")(require("./data/mineable")), // Ores, armo(u)r, tools

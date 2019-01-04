@@ -60,7 +60,7 @@ const aliases = {
     // == Combat ==
     SHIELD: ["handshield", "woodshield", "woodenshield"],
     TOTEM_OF_UNDYING: ["totem"],
-    SPAWNER: ["mobspawner", "mobcage", "monsterspawner", "monstercage", "mspawner", "mcage", "cage"],
+    //SPAWNER: ["mobspawner", "mobcage", "monsterspawner", "monstercage", "mspawner", "mcage", "cage"],
     // == Crops ==
     CARVED_PUMPKIN: ["hollowpumpkin", "cutpumpkin", "oldpumpkin", "legacypumpkin"],
     JACK_O_LANTERN: ["pumpkinlantern", "glowingpumpkin", "lightpumpkin", "jpumpkin", "plantren", "glowpumpkin", "gpumpkin", "lpumpkin"],

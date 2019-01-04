@@ -78,3 +78,5 @@ module.exports = data => ({
     test: test.bind(data),
     get: get.bind(data)
 });
+
+module.exports.joinAlias = joinAlias;

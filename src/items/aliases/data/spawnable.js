@@ -26,7 +26,7 @@ const prefixes = {
     GHAST: ["ghast"],
     GUARDIAN: ["guardian"],
     SHULKER: ["shulker", "shulk"],
-    PIG: ["pig"],
+    PIG: ["pig", ""], // PIG is the default
     SHEEP: ["sheep"],
     COW: ["cow"],
     CHICKEN: ["chicken"],
