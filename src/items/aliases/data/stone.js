@@ -36,7 +36,7 @@ const suffixes = {
 }
 
 // Certain full names that shouldn't be outputted as aliases here, as they refer to another material
-const protected = [];
+const protected = ["sandstone"];
 
 // Materials that should never be matched
 const excluded = [];
