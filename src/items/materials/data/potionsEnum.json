@@ -3,6 +3,6 @@
     "leaping": "JUMP",
     "swiftness": "SPEED",
     "healing": "INSTANT_HEAL",
-    "harming": "INSTANT_HARM",
+    "harming": "INSTANT_DAMAGE",
     "regeneration": "REGEN"
 }
