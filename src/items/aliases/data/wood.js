@@ -12,10 +12,6 @@ const prefixes = {
 
 // Types of material
 const suffixes = {
-    // These should be preferred over shorter materials
-    STRIPPED_$_LOG: ["strippedlog", "barelog", "stripped$tree", "bare$tree", "stripped$trunk", "bare$trunk"],
-    STRIPPED_$_WOOD: ["strippedwood", "barewood", "stripped$logall", "bare$logall", "stripped$trunkall", "bare$trunkall", "stripped$treeall", "bare$treeall"],
-    // All other materials
     SAPLING: ["sapling", "treesapling", "logsapling", "trunksapling", "woodsapling"],
     LEAVES: ["treeleaves", "logleaves", "trunkleaves", "woodleaves", "leaves", "treeleaf", "logleaf", "trunkleaf", "woodleaf", "leaf", "treeleave", "logleave", "trunkleave", "woodleave", "leave"],
     // TODO: Double slabs are a bit more complicated
@@ -28,10 +24,15 @@ const suffixes = {
     WOOD: ["wood", "logall", "trunkall", "treeall"],
     PLANK: ["woodenplank", "woodplank", "wplank", "plankwooden", "plankwood", "plankw", "plank"],
     TRAPDOOR: ["trapdoor", "doortrap", "hatch", "tdoor", "doort", "trapd", "dtrap"],
-}
+};
 
 // Certain full names that shouldn't be outputted as aliases here, as they refer to another material
 // eg. prevents WHITE_STAINED_GLASS overriding "glass"
-const protected = [];
+const protected = [""];
 
-module.exports = { prefixes, suffixes, protected };
+const excluded = [
+    "STRIPPED_ACACIA_LOG", "STRIPPED_BIRCH_LOG", "STRIPPED_DARK_OAK_LOG", "STRIPPED_JUNGLE_LOG", "STRIPPED_OAK_LOG", "STRIPPED_SPRUCE_LOG",
+    "STRIPPED_ACACIA_WOOD", "STRIPPED_BIRCH_WOOD", "STRIPPED_DARK_OAK_WOOD", "STRIPPED_JUNGLE_WOOD", "STRIPPED_OAK_WOOD", "STRIPPED_SPRUCE_WOOD",
+];
+
+module.exports = { prefixes, suffixes, protected, excluded };

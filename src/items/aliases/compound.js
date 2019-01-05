@@ -9,6 +9,8 @@ function test({ material }) {
 }
 
 function get({ material }) {
+    if (this.excluded && this.excluded.includes(material)) return [];
+
     let aliases = [];
 
     const prefix = Object.keys(this.prefixes)

@@ -7,6 +7,7 @@ const processes = [
     require("./spawners"),
     require("./compound")(require("./data/color")), // Colo(u)red things (not dyes)
     require("./compound")(require("./data/wood")), // Wood things (not tools)
+    require("./compound")(require("./data/wood-stripped")), // Wood things (not tools)
     require("./compound")(require("./data/mineable")), // Ores, armo(u)r, tools
     require("./compound")(require("./data/transport")), // Minecarts
     require("./compound")(require("./data/records")), // Music records
