@@ -25,8 +25,7 @@ const suffixes = {
     // These should be preferred over shorter materials
     STAINED_GLASS_PANE: ["glasspane", "sglasspane", "stainedglasspane", "gpane"],
     GLAZED_TERRACOTTA: ["glazedtcota", "glazedterra", "glazedterracotta", "glazedterracota"],
-    WALL_BANNER: ["wallbanner"],
-    CONCRETE_POWDER: ["concretepowder", "concretesand"],
+    CONCRETE_POWDER: ["concretepowder", "concretesand", "cpowder", "cdust", "cp"],
     // All other materials
     WOOL: ["wool", "cloth", "cotton"],
     STAINED_GLASS: ["glass", "sglass", "stainedglass"],
