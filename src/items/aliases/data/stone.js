@@ -41,7 +41,7 @@ const suffixes = {
 const protected = ["sandstone"];
 
 // Materials that should never be matched
-const excluded = ["COBBLESTONE_WALL", "MOSSY_COBBLESTONE_WALL"];
+const excluded = [];
 
 module.exports = {
     prefixes,
