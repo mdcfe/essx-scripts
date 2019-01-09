@@ -1,9 +1,14 @@
 const _ = require("lodash");
 
-function test({ material }) {
+function test({ material, unspawnable }) {
     if (this.excluded && this.excluded.includes(material)) {
         return false;
     }
+
+    if (unspawnable) {
+        return false;
+    }
+
     return (includesKeys(material, this.prefixes) && includesKeys(material, this.suffixes))
         || matchesSurround(material, this);
 }

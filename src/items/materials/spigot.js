@@ -15,7 +15,7 @@ const prep = async () => {
 const retrieve = () => {
     let matches;
     const materialsFound = [];
-    const excludes = [];
+    const unspawnable = [];
 
     [isItem] = isItemBodyRegex.exec(src);
     while ((matches = caseRegex.exec(isItem)) !== null) {
@@ -24,7 +24,7 @@ const retrieve = () => {
         }
 
         const materialName = matches[1];
-        excludes.push(materialName);
+        unspawnable.push(materialName);
     }
 
     while ((matches = definitionRegex.exec(src)) !== null) {
@@ -37,12 +37,19 @@ const retrieve = () => {
         // Skip legacy materials
         if (materialName.includes("LEGACY_")) continue;
 
-        // Skip excludes
-        if (excludes.includes(materialName)) continue;
+        const materialObj = {
+            material: materialName,
+        };
+
+        if (unspawnable.includes(materialName)) {
+            materialObj.unspawnable = true;
+        }
 
         materialsFound.push({
             material: materialName
         });
+
+
     }
 
     return materialsFound;
