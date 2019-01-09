@@ -7,6 +7,7 @@ const prefixes = {
     DIAMOND: ["crystal", "diamond", "d"],
     EMERALD: ["emerald", "e"],
     REDSTONE: ["redstone", "reds", "red", "rstone", "rs", "r"],
+    NETHER_QUARTZ: ["netherquartz", "hellquartz", "deathquartz", "nquartz", "hquartz", "dquartz", "quartz", "netherq", "hellq", "deathq", "nq", "hq", "dq", "q"],
     // While not ores, these have armor and tools
     LEATHER: ["leather", "l"],
     CHAINMAIL: ["chainmail", "chainm", "cmail", "chain", "cm"],
