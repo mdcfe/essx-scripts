@@ -60,7 +60,6 @@ const aliases = {
     // == Combat ==
     SHIELD: ["handshield", "woodshield", "woodenshield"],
     TOTEM_OF_UNDYING: ["totem"],
-    //SPAWNER: ["mobspawner", "mobcage", "monsterspawner", "monstercage", "mspawner", "mcage", "cage"],
     // == Crops ==
     CARVED_PUMPKIN: ["hollowpumpkin", "cutpumpkin", "oldpumpkin", "legacypumpkin"],
     JACK_O_LANTERN: ["pumpkinlantern", "glowingpumpkin", "lightpumpkin", "jpumpkin", "plantren", "glowpumpkin", "gpumpkin", "lpumpkin"],
@@ -69,13 +68,16 @@ const aliases = {
     MELON: ["watermelon", "greenmelon", "melongreen", "melonblock", "watermelonblock", "greenmelonblock"],
     // == Food ==
     BEETROOT_SOUP: ["brootsoup", "beetsoup", "beetssoup", "beetplantsoup", "beetcropsoup", "redsoup"],
+    GOLDEN_APPLE: ["goldapple", "newgoldapple", "notnotchapple"],
+    ENCHANTED_GOLDEN_APPLE: ["notchapple", "godapple", "enchgoldapple"],
     // == End Materials ==
     END_PORTAL: ["endergoo", "enderportal", "endgoo", "eportal", "egoo"],
     END_PORTAL_FRAME: ["endergooframe", "enderportalframe", "endgooframe", "eportalframe", "egooframe", "enderframe", "endframe"],
     END_STONE: ["enderstone", "endrock", "enderrock", "erock", "estone"],
     DRAGON_EGG: ["enderdragonegg", "endegg", "degg", "bossegg", "begg"],
     ELYTRA: ["hangglider", "glider", "wings", "wing", "playerwings", "playerwing", "pwings", "pwing"],
-
+    CHORUS_FRUIT: ["chorus", "unpoppedchorus", "unpopchorus"],
+    POPPED_CHORUS_FRUIT: ["pchorus", "poppedchorus", "popchorus"],
 }
 
 const validMaterials = Object.keys(aliases);
