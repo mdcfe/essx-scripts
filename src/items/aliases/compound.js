@@ -13,8 +13,8 @@ function test({ material, unspawnable }) {
         || matchesSurround(material, this);
 }
 
-function get({ material }) {
-    if (this.excluded && this.excluded.includes(material)) return [];
+function get({ material, unspawnable }) {
+    if ((this.excluded && this.excluded.includes(material)) || unspawnable) return [];
 
     let aliases = [];
 

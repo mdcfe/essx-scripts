@@ -45,11 +45,7 @@ const retrieve = () => {
             materialObj.unspawnable = true;
         }
 
-        materialsFound.push({
-            material: materialName
-        });
-
-
+        materialsFound.push(materialObj);
     }
 
     return materialsFound;
