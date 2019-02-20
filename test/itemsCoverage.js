@@ -21,7 +21,9 @@ async function start() {
     const itemsJson = await fs.readFile(itemsJsonPath);
     const itemsCsv = await download(itemsCsvUrl);
 
-    const jsonKeys = Object.keys(JSON.parse(itemsJson));
+    const jsonObj = JSON.parse(itemsJson)
+
+    const jsonKeys = Object.keys(jsonObj);
     const csvKeys = getCsvAliases(itemsCsv.replace("\\n", "\n"));
 
     const jsonMissing = _.difference(csvKeys, jsonKeys)
@@ -30,6 +32,16 @@ async function start() {
     const jsonPresent = _.intersection(jsonKeys, csvKeys);
 
     const jsonCoveredCount = csvKeys.length - jsonMissing.length;
+
+    const jsonNotOversizedKeys = jsonKeys.filter(key => key.length < 15).map(key => {
+        if (typeof jsonObj[key] === "string") {
+            return jsonObj[key];
+        } else {
+            return key;
+        }
+    }).filter(val => typeof val === "string");
+    const jsonOversized = jsonKeys.filter(key => (typeof jsonObj[key] !== "string"))
+                                .filter(key => !jsonNotOversizedKeys.includes(key));
 
     await fs.writeFile(reportPath, JSON.stringify({
         stats: {
@@ -41,6 +53,7 @@ async function start() {
             covered: jsonCoveredCount,
             coverage: ((jsonCoveredCount / csvKeys.length) * 100).toFixed(2)
         },
+        oversized: jsonOversized,
         missing: jsonMissing,
         extra: jsonExtra
     }, null, 4));
