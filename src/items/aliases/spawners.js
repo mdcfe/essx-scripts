@@ -7,7 +7,7 @@ const {
 } = require("./data/spawnable");
 
 const suffixes = {
-    SPAWNER: ["mobspawner", "mobcage", "monsterspawner", "monstercage", "mspawner", "mcage", "cage"],
+    SPAWNER: ["mobspawner", "mobcage", "monsterspawner", "monstercage", "mspawner", "mcage", "spawner", "cage"],
 };
 
 const test = ({
