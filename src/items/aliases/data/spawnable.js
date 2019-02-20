@@ -33,6 +33,7 @@ const prefixes = {
     SQUID: ["squid"],
     WOLF: ["wolf"],
     MOOSHROOM: ["mooshroom", "mushroom"],
+    MUSHROOM_COW: ["mooshroom", "mushroom"],
     SNOW_GOLEM: ["snowgolem", "sgolem"],
     OCELOT: ["ocelot", "cat"],
     IRON_GOLEM: ["irongolem", "igolem"],
