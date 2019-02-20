@@ -14,7 +14,7 @@ const processes = [
     require("./compound")(require("./data/spawnable")), // Mobs
     require("./compound")(require("./data/stone")), // Stone bricks
     require("./compound")(require("./data/meatfish")), // Meat and fish (is fish meat?)
-    //require("./smooth"), // "Smooth" blocks (top slab texture on all sides)
+    require("./compound")(require("./data/ocean")), // Sea things
     require("./compound")(require("./data/misc")), // Misc aliases
 ];
 
