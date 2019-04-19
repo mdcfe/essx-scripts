@@ -1,6 +1,6 @@
 const prefixes = {
     // Priority
-    ZOMBIE_PIGMAN: ["zombiepigman", "zpigman", "pigman", "zombiepman", "zpman", "zombiepigm", "zpigm", "zombiepig", "zpig", "zombiepm", "zombiep"],
+    ZOMBIE_PIGMAN: ["zombiepigman", "zpigman", "pigman", "zombiepman", "zpman", "zombiepigm", "zpigm", "zombiepig", "zpig", "zombiepm", "zombiep", "zombiepigmen", "zpigmen", "pigmen"],
     ZOMBIE_VILLAGER: ["zombievillager", "zvillager", "deadvillager", "dvillager", "zvill", "dvill"],
     CAVE_SPIDER: ["cavespider"],
     ZOMBIE_HORSE: ["zombiehorse", "zhorse"],
