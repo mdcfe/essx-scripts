@@ -32,8 +32,7 @@ const prefixes = {
     CHICKEN: ["chicken"],
     SQUID: ["squid"],
     WOLF: ["wolf"],
-    MOOSHROOM: ["mooshroom", "mushroom"],
-    MUSHROOM_COW: ["mooshroom", "mushroom"],
+    MOOSHROOM: ["mooshroom", "mushroom", "mushroomcow"],
     SNOW_GOLEM: ["snowgolem", "sgolem"],
     OCELOT: ["ocelot", "cat"],
     IRON_GOLEM: ["irongolem", "igolem"],
@@ -62,6 +61,10 @@ const prefixes = {
     DRAGON: ["dragon"],
 };
 
+// Add duplicates where materials and entities don't line up
+prefixes.MUSHROOM_COW = prefixes.MOOSHROOM;
+prefixes.PIG_ZOMBIE = prefixes.ZOMBIE_PIGMAN;
+
 const suffixes = {
     SPAWN_EGG: ["egg", "!egg", "spawnegg", "!spawnegg", "spawn", "!spawn"],
     HEAD: ["head", "skull", "!head", "!steve", "mask", "headmask"],
@@ -70,6 +73,6 @@ const suffixes = {
 };
 
 // Certain full names that shouldn't be outputted as aliases here, as they refer to another material
-const protected = ["egg"];
+const protected = ["egg", "spawner"];
 
 module.exports = { prefixes, suffixes, protected }
