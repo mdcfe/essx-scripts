@@ -29,7 +29,8 @@ const suffixes = {
 
 // Certain full names that shouldn't be outputted as aliases here, as they refer to another material
 // eg. prevents WHITE_STAINED_GLASS overriding "glass"
-const protected = ["dplate", "lplate", "splate", "spressureplate", "spressplate", "spplate"];
+// "" is intentional - this stops "": "oak_log" getting added.
+const protected = ["", "dplate", "lplate", "splate", "spressureplate", "spressplate", "spplate"];
 
 const excluded = [
     "STRIPPED_ACACIA_LOG", "STRIPPED_BIRCH_LOG", "STRIPPED_DARK_OAK_LOG", "STRIPPED_JUNGLE_LOG", "STRIPPED_OAK_LOG", "STRIPPED_SPRUCE_LOG",
