@@ -20,7 +20,10 @@ async function start() {
     (await retrieveMaterials()).forEach(addMaterial);
 
     console.log("Saving found materials...");
-    await fs.writeFile(outPath, JSON.stringify(materials, null, 4));
+
+    outString = "#version: ${full.version}\n" + JSON.stringify(materials, null, 4);
+    await fs.writeFile(outPath, outString);
+
     console.log("Done");
 }
 
@@ -35,7 +38,7 @@ function addMaterial(material) {
 
     //console.log(`Adding ${mainKey} with aliases: ${keys}`);
 
-    keys.filter(key => key !== mainKey) // Ensure the actual material key never gets overridden by mistake
+    keys.filter(key => key !== mainKey) // Ensure the actual material key never gets overridden
         .forEach(key => {
             materials[key] = mainKey; // Store a reference to the key holding the material object
         });

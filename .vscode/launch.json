@@ -9,7 +9,12 @@
             "type": "node",
             "request": "launch",
             "name": "genItemsFlat",
-            "program": "${workspaceFolder}/src\\genItemsFlat.js"
+            "program": "${workspaceFolder}\\src\\genItemsFlat.js"
+        }, {
+            "type": "node",
+            "request": "launch",
+            "name": "itemsCoverage",
+            "program": "${workspaceFolder}\\test\\itemsCoverage.js"
         }
     ]
 }

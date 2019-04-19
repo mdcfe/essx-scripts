@@ -18,10 +18,10 @@ const reportPath = path.resolve(__dirname, "../out/items.report.json");
 const itemsCsvRegex = /^([a-z]+),/gm;
 
 async function start() {
-    const itemsJson = await fs.readFile(itemsJsonPath);
+    const itemsJson = await fs.readFile(itemsJsonPath, "utf-8");
     const itemsCsv = await download(itemsCsvUrl);
 
-    const jsonObj = JSON.parse(itemsJson)
+    const jsonObj = JSON.parse(itemsJson.replace("#version: ${full.version}", ""));
 
     const jsonKeys = Object.keys(jsonObj);
     const csvKeys = getCsvAliases(itemsCsv.replace("\\n", "\n"));
