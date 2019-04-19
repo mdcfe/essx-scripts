@@ -39,6 +39,7 @@ const aliases = {
     TRAPPED_CHEST: ["trapchest", "chesttrapped", "chesttrap"],
     DAYLIGHT_DETECTOR: ["daylightsensor", "daylightsense", "lightsensor", "lightsense", "daysensor", "daysense", "timesensor", "timesense"],
     HOPPER: ["chestpuller", "chestpull", "cheststorer", "cheststore", "itempuller", "itempull", "itemstorer", "itemstore"],
+    STONE_PRESSURE_PLATE: ["splate"],
     // == Decorative ==
     RED_SAND: ["rsand"], // misc
     GLASS: ["blockglass", "glassblock"],

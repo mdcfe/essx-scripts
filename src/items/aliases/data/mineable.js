@@ -38,6 +38,6 @@ const suffixes = {
 }
 
 // Ambiguous aliases that shouldn't get outputted here
-const protected = ["ii", "si", "bars", "ingots", "is", "io", "oi", "so", "os"];
+const protected = ["ii", "si", "bars", "ingots", "is", "io", "oi", "so", "os", "splate"];
 
 module.exports = { prefixes, suffixes, protected };
