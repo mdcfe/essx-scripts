@@ -24,6 +24,7 @@ const suffixes = {
     WOOD: ["wood", "logall", "trunkall", "treeall"],
     PLANK: ["woodenplank", "woodplank", "wplank", "plankwooden", "plankwood", "plankw", "plank"],
     TRAPDOOR: ["trapdoor", "doortrap", "hatch", "tdoor", "doort", "trapd", "dtrap"],
+    PRESSURE_PLATE: ["pressureplate", "pressplate", "pplate", "plate"]
 };
 
 // Certain full names that shouldn't be outputted as aliases here, as they refer to another material

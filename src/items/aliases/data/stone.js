@@ -14,9 +14,10 @@ const suffixes = {
     // These are sandstone variations
     SMOOTH: ["!smooth", "!sm"],
     CUT: ["!cut"],
-    // These are actually suffixes here
+    // These are normal suffixes
     SLAB: ["slab", "sl"],
     STAIR: ["stair", "stairs", "st"],
+    PRESSURE_PLATE: ["pressureplate", "pressplate", "pplate", "plate"],
     // Normal stone blocks have no prefix
     $: [""]
 };
