@@ -28,7 +28,6 @@ const aliases = {
     WATER: ["stationarywater", "stillwater", "swater"],
     LAVA: ["stationarylava", "stilllava", "slava"],
     // == Redstone ==
-    STONE_PRESSURE_PLATE: ["stonepressplate", "stonepplate", "stoneplate", "spressureplate", "spressplate", "spplate", "splate", "smoothstonepressueplate", "smoothstonepressplate", "smoothstonepplate", "smoothstoneplate", "sstonepressureplate", "sstonepressplate", "sstonepplate", "sstoneplate"],
     REDSTONE_TORCH: ["rstonetorch", "redstorch", "redtorch", "rstorch"],
     STONE_BUTTON: ["smoothstonebutton", "sstonebutton", "sbutton", "button"],
     DISPENSER: ["dispense"],
