@@ -17,7 +17,6 @@ const suffixes = {
     // These are normal suffixes
     SLAB: ["slab", "sl"],
     STAIR: ["stair", "stairs", "st"],
-    PRESSURE_PLATE: ["pressureplate", "pressplate", "pplate", "plate"],
     // Normal stone blocks have no prefix
     $: [""]
 };

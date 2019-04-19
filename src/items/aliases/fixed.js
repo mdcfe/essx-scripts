@@ -39,7 +39,7 @@ const aliases = {
     TRAPPED_CHEST: ["trapchest", "chesttrapped", "chesttrap"],
     DAYLIGHT_DETECTOR: ["daylightsensor", "daylightsense", "lightsensor", "lightsense", "daysensor", "daysense", "timesensor", "timesense"],
     HOPPER: ["chestpuller", "chestpull", "cheststorer", "cheststore", "itempuller", "itempull", "itemstorer", "itemstore"],
-    STONE_PRESSURE_PLATE: ["splate"],
+    STONE_PRESSURE_PLATE: ["stonepressplate", "stonepplate", "stoneplate", "spressureplate", "spressplate", "spplate", "splate", "smoothstonepressueplate", "smoothstonepressplate", "smoothstonepplate", "smoothstoneplate", "sstonepressureplate", "sstonepressplate", "sstonepplate", "sstoneplate"],
     // == Decorative ==
     RED_SAND: ["rsand"], // misc
     GLASS: ["blockglass", "glassblock"],
