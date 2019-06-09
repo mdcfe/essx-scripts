@@ -21,6 +21,8 @@ async function main() {
     const newJson = JSON.parse(newJsonStr);
 
     Object.keys(newJson).forEach(key => {
+        if (baseJson[key] && baseJson[key] instanceof Object) return;
+
         baseJson[key] = newJson[key];
     });
 
